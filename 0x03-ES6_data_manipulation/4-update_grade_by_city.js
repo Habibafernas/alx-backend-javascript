@@ -26,7 +26,7 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
         grade: (newGrades
           .filter((grade) => grade.studentId === student.id)
           .pop() || defaultGrade).grade,
-    }));
+      }));
   }
   return [];
 }
