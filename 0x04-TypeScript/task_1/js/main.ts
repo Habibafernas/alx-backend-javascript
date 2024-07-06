@@ -7,3 +7,7 @@ export interface Teacher {
   contract: boolean;
   [index:string]: any;
 }
+
+export interface Directors extends Teacher{
+  numberOfReports: number;
+}
